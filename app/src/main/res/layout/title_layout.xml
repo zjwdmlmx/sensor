@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="match_parent"
+              android:background="@drawable/title_shape">
+
+    <TextView android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:textSize="20sp"
+        android:gravity="center_vertical|left"
+        android:background="@android:color/transparent"
+        android:paddingLeft="18dp"
+        android:textColor="#f0f0f0"/>
+
+    <ImageButton android:id="@+id/header_users_btn"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:paddingRight="20dp"
+        android:contentDescription="Choose current user"/>
+</LinearLayout>

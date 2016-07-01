@@ -1,0 +1,81 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">60dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/titleBackground</item>
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+    <!-- title about -->
+    <style name="titleBackground">
+        <item name="android:background">@color/titleBackground</item>
+    </style>
+
+
+    <!-- buttons -->
+    <style name="ButtonTheme">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="ErrorButtonTheme" parent="ButtonTheme">
+        <item name="android:background">@drawable/button_error</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="NormalButtonTheme" parent="ButtonTheme">
+        <item name="android:background">@drawable/button_normal</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="SuccessButtonTheme" parent="ButtonTheme">
+        <item name="android:background">@drawable/button_success</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="WarningButtonTheme" parent="ButtonTheme">
+        <item name="android:background">@drawable/button_warning</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="notification_quit_btn">
+        <item name="android:background">#e04020</item>
+        <item name="android:textColor">#f8f8f8</item>
+    </style>
+
+    <style name="ListItem">
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:textColor">#404040</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/list_item_background</item>
+    </style>
+
+    <style name="StateTitle">
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="StateContent">
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#f0f0f0</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="NormalEdit">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">#404040</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+        <item name="android:background">@drawable/edit_background</item>
+    </style>
+</resources>
