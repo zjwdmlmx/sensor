@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <GridLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="6">
+            <TextView
+                style="@style/SettingTitle"
+                android:layout_gravity="fill"
+
+                android:layout_columnSpan="6"
+                android:text="@string/setting_server"/>
+
+            <TextView
+                style="@style/SettingLabel"
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="fill"
+                android:text="@string/setting_server_address"/>
+
+            <EditText
+                android:id="@+id/setting_server_address"
+                style="@style/NormalEdit"
+                android:layout_width="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_columnSpan="5"
+
+                android:hint="Input server address"/>
+
+            <TextView
+                style="@style/SettingLabel"
+                android:gravity="fill"
+
+                android:text="@string/setting_server_port"
+                android:layout_gravity="fill" />
+
+            <EditText
+                android:id="@+id/setting_server_port"
+                android:hint="Input server port"
+                android:layout_gravity="fill"
+                android:layout_columnSpan="5"
+                style="@style/NormalEdit"/>
+
+            <TextView style="@style/SettingTitle"
+                android:layout_columnSpan="6"
+                android:text="Common"/>
+
+            <TextView style="@style/SettingLabel"
+                android:layout_gravity="fill"
+                android:layout_columnSpan="1"
+                android:text="Model"/>
+            <LinearLayout
+                android:layout_gravity="fill"
+                android:layout_columnSpan="5"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+                <ToggleButton
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/check_box"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_margin="0dp"
+                    android:textOff="Recode"
+                    android:textOn="Normal"
+                    android:checked="true" />
+            </LinearLayout>
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/setting_save_btn"
+                style="@style/SuccessButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_save_btn"/>
+
+            <Button
+                android:id="@+id/setting_cancel_btn"
+                style="@style/ErrorButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

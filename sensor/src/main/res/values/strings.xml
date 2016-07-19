@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Sensor</string>
+    <string name="start_recode_btn_txt">Start Recode</string>
+    <string name="finish_recode_btn_txt">Finish Recode</string>
+    <string name="run_btn_txt">Run</string>
+    <string name="walk_btn_txt">Walk</string>
+    <string name="notification_default_txt">Sensor data recoding...</string>
+    <string name="main_activity_title">Sensor data collector</string>
+    <string name="user_select_activity_title">Choose a user to recode</string>
+    <string name="user_logined">User</string>
+    <string name="user_state">State</string>
+    <string name="user_recode">Recode</string>
+    <string name="add_user_btn">Create</string>
+    <string name="cancel_add_user_btn">Cancel</string>
+    <string name="username_edit_label">Name</string>
+    <string name="input_user_name_hint">Input your name</string>
+    <string name="add_user_activity_title">create new user</string>
+    <string name="stand_btn_txt">Stand</string>
+    <string name="jump_btn_txt">Jump</string>
+    <string name="sleep_btn_txt">Sleep</string>
+    <string name="cycle_btn_txt">Cycle</string>
+    <string name="car_btn_txt">Car</string>
+    <string name="bus_btn_txt">Bus</string>
+    <string name="transmit_Server">Transmit Server</string>
+    <string name="transmit_port">Transmit Port</string>
+    <string name="recode">Recode</string>
+    <string name="more">More</string>
+    <string name="setting">Setting</string>
+    <string name="setting_server_address">Address</string>
+    <string name="setting_server">Server settings</string>
+    <string name="setting_server_port">Port</string>
+    <string name="setting_save_btn">Save</string>
+    <string name="user_list_view">User List Activity</string>
+    <string name="add_user_view">Add User Activity</string>
+</resources>

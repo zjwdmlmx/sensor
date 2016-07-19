@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ListView android:id="@+id/user_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/list_thumb"
+        android:stackFromBottom="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0px"
+        android:listSelector="@color/titleBackground"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff">
+            <Button
+                style="@style/SuccessButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ok"
+                android:onClick="onClick_Ok_user"/>
+
+            <Button
+                style="@style/ButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:onClick="onClick_Cancel"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dp"
+        android:background="#fff"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/titleBackground">
+            <TextView
+                android:id="@+id/user_logged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:background="#20a080"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="not logged"/>
+
+            <GridLayout
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:columnCount="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="fill"
+                    style="@style/StateTitle"
+                    android:text="@string/user_state"/>
+
+                <TextView
+                    android:layout_gravity="fill"
+                    style="@style/StateContent"
+                    android:id="@+id/user_state"
+                    android:text="Unknown"/>
+
+                <TextView
+                    android:layout_gravity="fill"
+                    style="@style/StateTitle"
+                    android:text="@string/user_recode"/>
+
+                <TextView
+                    android:layout_gravity="fill"
+                    style="@style/StateContent"
+                    android:id="@+id/user_recode"
+                    android:text="No"/>
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#fff">
+            <Button
+                android:id="@+id/start_recode_btn"
+                style="@style/NormalButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/start_recode_btn_txt" />
+
+            <Button
+                android:id="@+id/stop_recode_btn"
+                style="@style/NormalButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stop Recode" />
+        </LinearLayout>
+
+        <GridLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/run_selector_btn"
+                style="@style/ErrorButtonTheme"
+                android:layout_columnWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill"
+                android:text="@string/run_btn_txt" />
+
+            <Button
+                android:id="@+id/stand_selector_btn"
+                style="@style/NormalButtonTheme"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/stand_btn_txt" />
+
+            <Button
+                android:id="@+id/walk_selector_btn"
+                style="@style/SuccessButtonTheme"
+                android:layout_columnWeight="1"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill"
+                android:text="@string/walk_btn_txt" />
+
+            <Button
+                android:id="@+id/jump_selector_btn"
+                style="@style/ErrorButtonTheme"
+                android:layout_columnWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill"
+                android:text="@string/jump_btn_txt" />
+
+            <Button
+                android:id="@+id/cycle_selector_btn"
+                style="@style/WarningButtonTheme"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/cycle_btn_txt" />
+
+            <Button
+                android:id="@+id/car_selector_btn"
+                style="@style/ButtonTheme"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/car_btn_txt" />
+
+            <Button
+                android:id="@+id/bus_selector_btn"
+                style="@style/SuccessButtonTheme"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="@string/bus_btn_txt" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+</ScrollView>

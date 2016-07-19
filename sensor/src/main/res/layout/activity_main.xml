@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_content">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/bottom_line_color"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:background="#fff">
+        <ImageButton android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:layout_gravity="fill"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/recode_show_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/write"/>
+
+        <ImageButton android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:id="@+id/setting_show_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/setting"/>
+
+        <ImageButton android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="@android:color/transparent"
+            android:id="@+id/more_show_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/more"/>
+
+        <TextView
+          android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="@string/recode"
+            android:textAlignment="center"
+            android:background="#fff"/>
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="@string/setting"
+            android:textAlignment="center"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="@string/more"
+            android:textAlignment="center"
+            android:background="#fff"/>
+    </GridLayout>
+
+</LinearLayout>

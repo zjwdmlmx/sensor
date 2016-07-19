@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#fff">
+
+    <EditText
+        style="@style/NormalEdit"
+        android:inputType="text"
+        android:hint="@string/input_user_name_hint"
+        android:typeface="sans"
+        android:textSize="15sp"
+        android:maxLength="20"
+        android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+        android:id="@+id/username_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <Button
+            style="@style/SuccessButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_user_btn"
+            android:onClick="onClick_Create_user"/>
+
+        <Button
+            style="@style/NormalButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel_add_user_btn"
+            android:onClick="onClick_Cancel"/>
+    </LinearLayout>
+
+</LinearLayout>
